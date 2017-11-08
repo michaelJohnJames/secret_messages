@@ -1,0 +1,11 @@
+<h1>Secret message</h1>
+
+<a href="/">Back</a>
+
+
+<article>
+  <h3><%= @message.title %></h3>
+  <p><%= @message.body %></p>
+</article>
+
+<a href="/messages/<%= @message.id %>/edit">Edit</a>

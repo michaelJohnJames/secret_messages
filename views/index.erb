@@ -1,0 +1,16 @@
+<h1>Secret Messages</h1>
+
+<a href="/messages/new">New message</a>
+
+<div class="message-container">
+
+  <% @messages.reverse_each do |message| %>
+
+    <div class="message">
+      <p class="message-title">
+      <a href="/messages/<%= message.id %>"><%= message.title %></a>
+      </p>
+    </div>
+
+  <% end %>
+</div>
