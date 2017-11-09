@@ -1,1 +1,20 @@
 <h1>Edit text</h1>
+
+<div>
+
+<form action="/messages/<%= @message.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+<br>
+<label>Title</label>
+<br>
+<input type="text" name="title" value="<%= @message.title %>">
+<br>
+<label>Body</label>
+<br>
+<input type="text" name="body" value="<%= @message.body %>">
+<input type="submit" name="submit" value="Change">
+</form>
+
+  </div>
+<br>
+  <a href="/">Home</a>

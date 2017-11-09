@@ -45,7 +45,8 @@ get '/messages/:id' do
 end
 
 get '/messages/:id/edit' do
-  
+  @message = Message.find_by_id(params[:id])
+  erb :'messages/edit'
 end
 
 
